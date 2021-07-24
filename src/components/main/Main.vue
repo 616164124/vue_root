@@ -1,7 +1,7 @@
 <template>
     <div class="main" >
       <il>main</il>
-      <div v-bind:class="">main----</div>
+      <div v-bind:class="class1">main----</div>
     </div>
 </template>
 
@@ -34,5 +34,9 @@
 </script>
 
 <style scoped>
+
+  class1{
+    background-color: #3ba746;
+  }
 
 </style>
