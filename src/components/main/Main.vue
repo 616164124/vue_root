@@ -1,6 +1,7 @@
 <template>
     <div class="main" >
       <il>main</il>
+      <il>{{this.$store.state.count}}</il>
       <div v-bind:class="class1">main----</div>
     </div>
 </template>
