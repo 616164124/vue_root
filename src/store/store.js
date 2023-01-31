@@ -7,6 +7,7 @@ const state = {
   count: 0
 }
 
+
 /**
  * mutations 里面放置的是我们操作state对象属性的方法
  */
