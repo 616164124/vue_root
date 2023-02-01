@@ -37,4 +37,6 @@ export default {
 <style style="scss" scoped>
 @import url("./day01_01.css");
 
+
+
 </style>
