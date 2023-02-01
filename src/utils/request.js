@@ -57,7 +57,7 @@ axios.interceptors.response.use(
  * @param params  请求参数
  * @returns {Promise}
  */
-export function get(url, params = {}) {
+export async function get(url, params = {}) {
     return new Promise((resolve, reject) => {
         axios.get(url, {
             params: params,
@@ -78,7 +78,7 @@ export function get(url, params = {}) {
  * @returns {Promise}
  */
 
-export function post(url, data) {
+export async function post(url, data) {
     return new Promise((resolve, reject) => {
         axios.post(url, data).then(
             (response) => {
@@ -143,7 +143,7 @@ export default function api(method, url, param) {
     return new Promise((resolve, reject) => {
         switch (method) {
             case "get":
-                console.log("begin a get request,and url:", url);
+                // console.log("begin a get request,and url:", url);
                 get(url, param)
                     .then(function (response) {
                         resolve(response);

@@ -2,19 +2,25 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h1>{{ this.$store.state.count }}</h1>
-    <!-- <il v-for=" itme in this.alisa">{{itme}}</il>
-    <il v-for=" itme in alist">{{itme}}</il>
-    <il v-if="judgment">jfjl</il>
-    <il v-else>1111</il>
-    <il v-if="!judgment">ppppp</il>
-    <il v-else>1111</il> -->
+    <li v-for="(item, index) in alist">{{ item }}----{{ index }}</li>
+    <br />
+
+    <li v-if="judgment">1111</li>
+    <li v-else>2222</li>
     <button @click="onclick1('kkkk')">按钮4</button>
     <button @click="add()">add</button>
     <button @click="request()">request</button>
+    <div id="line"></div>
+    <Day01></Day01>
+    <div id="line"></div>
+    <div>{{ msg.request }}</div>
+    <div id="line"></div>
+    
   </div>
 </template>
 
 <script>
+import Day01 from "../components/day/day01.vue";
 import api from "../utils/request";
 import request from "../utils/request";
 export default {
@@ -23,7 +29,8 @@ export default {
     return {
       msg: "Welcome to Your Vue.js App",
       alist: ["a", "b", "v", "d"],
-      judgment: false
+      judgment: false,
+      msg: { type: String, required: true }
     };
   },
   methods: {
@@ -42,7 +49,8 @@ export default {
         })
         .catch(err => {});
     }
-  }
+  },
+  components: { Day01 }
 };
 </script>
 
@@ -65,5 +73,11 @@ li {
 
 a {
   color: #42b983;
+}
+
+#line {
+  height: 10px;
+  width: 100%;
+  background-color: red;
 }
 </style>

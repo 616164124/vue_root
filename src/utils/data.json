@@ -1,0 +1,24 @@
+{
+  "zhlx": [
+    {
+      "value": "YLK",
+      "text": "一类卡",
+      "order": 0
+    },
+    {
+      "text": "二类卡",
+      "value": "ELK",
+      "order": 1
+    }
+  ],
+  "sys":[
+    {
+      "value": "KPXT",
+      "text": "开票系统"
+    }
+  ],
+  "txfs": [
+    {"value": "HTTP","text": "HTTP"},
+    {"value": "HTTPS","text": "HTTPS"}
+  ]
+}
