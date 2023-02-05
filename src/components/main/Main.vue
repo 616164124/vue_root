@@ -2,7 +2,7 @@
     <div class="class1" >
       <il>main</il>
       <il>{{this.$store.state.count}}</il>
-      <div v-bind:class="class1">main----</div>
+      <div>main----</div>
     </div>
 </template>
 

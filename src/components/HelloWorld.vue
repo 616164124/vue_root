@@ -13,9 +13,8 @@
     <div id="line"></div>
     <Day01></Day01>
     <div id="line"></div>
-    <div>{{ msg.request }}</div>
+    <div>{{ msg }}</div>
     <div id="line"></div>
-    
   </div>
 </template>
 
@@ -29,8 +28,7 @@ export default {
     return {
       msg: "Welcome to Your Vue.js App",
       alist: ["a", "b", "v", "d"],
-      judgment: false,
-      msg: { type: String, required: true }
+      judgment: false
     };
   },
   methods: {

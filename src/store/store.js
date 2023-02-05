@@ -4,7 +4,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  count: 0
+  count: 0,
+  shop: "水果店"
+  
 }
 
 
@@ -17,8 +19,12 @@ const mutations = {
   },
   mutationsReduceCount(state, n = 1) {
     return (state.count -= 1)
+  },
+  change1(state, name) {
+    return (state.shop = name)
   }
 }
+
 
 export default new Vuex.Store({
   state,
