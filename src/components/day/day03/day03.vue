@@ -1,6 +1,7 @@
 <template>
   <div>
     <p>day03</p>
+    <div>sss</div>
   </div>
 </template>
 
@@ -14,7 +15,11 @@ export default {
         msg:"hello vue day03"
     };
   },
-  created() {},
+  created() {
+    setInterval((() => {
+      console.log("123");
+    }),1000)
+  },
   mounted() {},
   activited() {},
   update() {},

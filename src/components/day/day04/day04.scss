@@ -1,0 +1,53 @@
+#p1:hover {
+  background-color: aqua;
+  height: 1.2rem;
+}
+
+#p1 {
+  background-color: red;
+  height: 1.2rem;
+}
+
+#line {
+  background-color: black;
+  height: 1.2rem;
+}
+
+p span {
+  background-color: red;
+}
+
+div ~ p {
+  background-color: aqua;
+}
+
+#p {
+  height: 100%;
+  width: 1.2rem;
+}
+/*第一行*/
+#p5::first-line {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/*首字*/
+#p6::first-letter {
+  color: red;
+  font-size: xx-large;
+}
+/**********p7**************/
+#p7 {
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  form {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
